@@ -18,7 +18,7 @@ I try to make something clean and simple to use.
 
 ---
 
-How you would test this if you had more time
+### How you would test this if you had more time
 I would test the lanes function to be sure the items not overlap.
 Also test on mobile and other browsers.
 If have more time I would make some automatic tests for components too, by using Jest, React Testing Library to make sure the component renders correctly.
