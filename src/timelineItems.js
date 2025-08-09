@@ -1,4 +1,4 @@
-const timelineItems = [
+export const timelineItems = [
   {
     id: 1,
     start: "2021-01-14",
@@ -97,4 +97,13 @@ const timelineItems = [
   },
 ];
 
-export default timelineItems;
+// Função para atualizar um item específico
+export function updateTimelineItem(itemId, updates) {
+  const itemIndex = timelineItems.findIndex(item => item.id === itemId);
+  if (itemIndex !== -1) {
+    timelineItems[itemIndex] = { ...timelineItems[itemIndex], ...updates };
+    return timelineItems[itemIndex];
+  }
+  return null;
+}
+
